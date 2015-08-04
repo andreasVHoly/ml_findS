@@ -1,10 +1,11 @@
 #include <iostream>
-
+#include <finds.h>
+#include <trainingset.h>
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+
     return 0;
 }
 
