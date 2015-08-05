@@ -1,15 +1,12 @@
 #include <iostream>
-#include "finds.h"
-#include "trainingset.h"
 #include <vector>
 #include <string>
-using namespace std;
+
 
 int main()
 {
-	using namespace vhland002;
 	using namespace std;
-	TrainingSet vars();
+
 
 
 //	TrainingSet h(TrainingSet::Sky::Sunny, TrainingSet::AirTemp::Warm,
