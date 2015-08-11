@@ -11,13 +11,13 @@ int main(/*int argc, char argv[]*/)
     using namespace std;
 
     //string fileName = argv[1];
-
-    string sets[4][7] = {
-            {"Sunny", "Warm", "Normal", "Strong", "Warm", "Same", "Yes"},
-            {"Sunny", "Warm", "High", "Strong", "Warm", "Same", "Yes"},
-            {"Rainy", "Cold", "High", "Strong", "Warm", "Change", "No"},
-            {"Sunny", "Warm", "High", "Strong", "Cool", "Change", "Yes"}
-    };
+    vector<string[7]> sets;
+//    string sets[4][7] = {
+//            {"Sunny", "Warm", "Normal", "Strong", "Warm", "Same", "Yes"},
+//            {"Sunny", "Warm", "High", "Strong", "Warm", "Same", "Yes"},
+//            {"Rainy", "Cold", "High", "Strong", "Warm", "Change", "No"},
+//            {"Sunny", "Warm", "High", "Strong", "Cool", "Change", "Yes"}
+//    };
 
 
     //we set the amount of training examples
@@ -38,18 +38,26 @@ int main(/*int argc, char argv[]*/)
                 //comment line
                 continue;
             }
-            else if(line[0] == '('){
-                //set
-
-            }
-            else{
+            else if(line[0] == '!'){
                 string out;
+                getline(ss,out, ' ');
                 getline(ss,out, ' ');
                 setAmount = atoi(out.c_str());
                 getline(ss,out, ' ');
                 setSize = atoi(out.c_str());
-                cout << setAmount << endl;
-                cout << setSize << endl;
+                cout << "set amount " << setAmount << endl;
+                cout <<  "set size " << setSize << endl;
+
+            }
+            else{
+                string value;
+                string set[7];
+                int i = 0;
+                while (getline(ss,value,',')){
+                    set[i] = value;
+                    i++;
+                }
+                sets.push_back(set);
             }
 
 
@@ -60,6 +68,13 @@ int main(/*int argc, char argv[]*/)
         cout << "Error reading file" << endl;
         return 1;
     }
+
+    for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 7; j++){
+            cout << sets[i][j] << endl;
+        }
+    }
+
 
     return 0;
     //we set up a default hypothesis
