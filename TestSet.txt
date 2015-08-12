@@ -1,6 +1,5 @@
 #comment line
 #this is the test set provided in the book
-! 4 7
 Sunny,Warm,Normal,Strong,Warm,Same,Yes
 Sunny,Warm,High,Strong,Warm,Same,Yes
 Rainy,Cold,High,Strong,Warm,Change,No
