@@ -13,8 +13,7 @@ main.o:	main.cpp
 		$(CC) $(CCFLAGS) main.cpp -c
 	
 
-run:
-	./program
+
 #if we want to clean all the compiled files	
 #to clean all .o files
 #to clean the driver file which is used to run the program

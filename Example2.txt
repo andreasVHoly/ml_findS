@@ -1,3 +1,3 @@
-#example set 1 to achieve (Sunny,?,?,Strong,?,?,)
+#example set 1 to achieve (Sunny,Warm,?,?,?,?,)
 Sunny,Warm,Normal,Strong,Warm,Same,Yes
-Sunny,Cold,High,Strong,Cool,Change,Yes
+Sunny,Warm,High,Weak,Cool,Change,Yes
